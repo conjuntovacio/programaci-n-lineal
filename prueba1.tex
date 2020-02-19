@@ -1,0 +1,67 @@
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage[spanish]{babel}
+
+\title{Apuntes de programación lineal}
+
+\author{Melissa Alemán}
+
+
+\begin{document}
+
+
+
+\maketitle
+\tableofcontents
+\section{Introducción}
+\label{sec:introduccion}
+
+La forma estándar de un problema de programación lineal es: Dados una
+matriz $A$ y vectores $b,c$, maximizar $c^Tx$ sujeto a $Ax\leq b$.
+
+La forma simplex de un problema de programación lineal es: Dados una
+matriz $A$ y vectores $b,c$, maximizar $c^tx$ sijeto a $Ax = b$.
+
+\bigskip
+
+\section{Ejercicios}
+\label{sec:ejercicios}
+
+
+Ejercicios :
+
+1. considere el siguiente problema:
+Maximizar $x+y$ sujeto a: $x \geq 0$, $1 \leq y \leq 3$, $2x+y \leq
+7$.
+
+2. Un gerente esta pleneando como distribuir la produccion de dos
+productos entre dos maquinas. Para ser manufacturado cada producto
+
+requiere cierto tiempo (en horas) en cada una de las maquinas. El
+tiempo requerido está resumido en la siguiente tabla:
+
+\begin{tabular}{|c|c|c|}
+  \hline
+  &A&B\\
+  \hline
+  Maquina 1&1&2\\
+  maquina 2&1&1\\
+  \hline
+\end{tabular}
+
+considere la siguiente matriz:
+
+\begin{equation}
+  \label{eq:1}
+  A=\begin{pmatrix}
+    0&1&2\\
+    3&-1&5\\
+  \end{pmatrix}
+  \begin{pmatrix}
+    2&0\\
+    7&1\\
+  \end{pmatrix}
+\end{equation}
+\end{document}
